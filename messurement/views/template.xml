@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <template id="vialeta">
+            <t t-call="website.layout">
+                <div class="container text-center">
+                   <h1><p class="text-left">
+                           <br/>
+                        </p></h1>
+                    <h1><p class="text-left">
+                            Medidas de vialeta <a href="/">Pagina de inicio</a>.<br/>
+                        </p></h1>
+                    <table class="default" border="1">
+                        <tr>
+                            <th style='text-align:left'>ID</th>
+                            <td style='text-align:left'><span t-esc="vialeta.id" /></td>
+                            <td rowspan="6"><img class="img img-responsive" t-att-src="'/messurement/static/src/vialeta-hersan.png'" height="150" width="150" /></td>
+                        </tr>
+                        <tr>
+                            <th style='text-align:left'>Fecha de creacion &#160;&#160;&#160;&#160;</th>
+                            <td style='text-align:left'><span t-esc="vialeta.create_date" /></td>
+                        </tr>
+                        <tr>                      
+                            <th style='text-align:left'>Nombre</th>
+                            <td style='text-align:left'><span t-esc="vialeta.name" /></td>
+                        </tr>
+                        <tr>
+                            <th style='text-align:left'>Medida 1</th>
+                            <td style='text-align:left'><span t-esc="vialeta.messuremente1" /></td>
+                         </tr>
+                        <tr>
+                            <th style='text-align:left'>Medida 2</th>
+                            <td style='text-align:left'><span t-esc="vialeta.messuremente2" /></td>
+                        </tr>
+                        <tr>
+                            <th style='text-align:left'>Nota</th>
+                            <td style='text-align:left'><span t-esc="vialeta.note" /></td>
+                        </tr>               
+                    </table>
+                </div>
+            </t>
+         </template>
+    </data>
+</odoo>
