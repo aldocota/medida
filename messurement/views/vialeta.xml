@@ -5,7 +5,12 @@
         <menuitem id="messurement_menu_root"
             name="Messurement"
             sequence="10"/>
-
+        
+        <menuitem id="vialeta_order_menu"
+            name="Vialeta"
+            parent="messurement_menu_root"
+            action="action_vialeta"
+            sequence="2"/>       
       
 
 
